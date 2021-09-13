@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #edf2fc;
+  font-family: sans-serif;
+  position: relative;
+}
+
+nav {
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 10px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.info h1 {
+  font-size: 70px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.info h1 span {
+  color: #562e84;
+}
+
+.img-box {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.img-box img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+
+.img-box:hover .main-img {
+  left: 54%;
+}
+
+.social-media {
+  margin-top: 50px;;
+  margin-left: 8%;
+}
+
+.social-media a {
+  font-size: 30px;
+  color: #606163;
+  margin-right: 20px;
+}
+
+.social-media a:hover {
+  color: #562e84;
+}
+
+@media (max-width: 700px) {
+  .info h1 {
+    font-size: 56px;
+  }
+
+  .img-box img {
+    height: 70%;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
